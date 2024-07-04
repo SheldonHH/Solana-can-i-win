@@ -1,3 +1,14 @@
+- Program Id: 程序ID，是程序在Solana网络中的唯一标识符，为3N8i3UJNMBw5eyoQEKf8Qo14xh3yLKuXpK1jWVde8tFX。
+- Owner: 程序的所有者，这里是BPFLoaderUpgradeab1e11111111111111111111111，表示该程序是由BPF（Berkeley Packet Filter）加载器托管的，并且是可升级的。
+- ProgramData Address: 程序数据地址，是存储程序相关数据的位置，地址为8CRiFPVRqSfJJs6MJYbLwVbG23ptFPwouUMUr8UfJEKT。
+- Authority: 权限地址，表明该程序的权限控制地址为76TZci2XV49K1phzrnGo2L8wVgHoGt8MF47KhJTVjGrk。
+- Last Deployed In Slot: 最后部署的Slot（时段），表示该程序在Slot 309244920中最后一次部署。
+- Data Length: 数据长度，表示程序数据的长度为37008字节（0x9090字节）。
+- Balance: 余额，表示该程序账户中的SOL余额为0.25877976 SOL。
+这是一份关于Solana程序的详细信息，涵盖了其ID、所有者、数据地址、权限、最后部署的Slot、数据长度和余额等信息。
+
+
+
 ```bash
 solana config set --url https://api.devnet.solana.com
 
