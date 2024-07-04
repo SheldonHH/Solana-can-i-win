@@ -29,7 +29,7 @@ fn process_instruction(
 }
 
 // 解析指令数据函数
-fn parse_instruction_data(data: &[u8]) -> Result<(i32, i32), ProgramError> {
+pub fn parse_instruction_data(data: &[u8]) -> Result<(i32, i32), ProgramError> {
     if data.len() != 8 {
         return Err(ProgramError::InvalidInstructionData);
     }
@@ -37,9 +37,11 @@ fn parse_instruction_data(data: &[u8]) -> Result<(i32, i32), ProgramError> {
     let desired_total = i32::from_le_bytes([data[4], data[5], data[6], data[7]]);
     Ok((max_choosable_integer, desired_total))
 }
+
 use std::collections::HashMap;
+
 // can_i_win 函数实现
-fn can_i_win(max_choosable_integer: i32, desired_total: i32) -> bool {
+pub fn can_i_win(max_choosable_integer: i32, desired_total: i32) -> bool {
     if desired_total <= 0 {
         println!("目标和小于等于0，玩家直接胜利");
         return true;

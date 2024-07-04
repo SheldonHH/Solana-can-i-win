@@ -1,4 +1,6 @@
 ```bash
+solana config set --url https://api.devnet.solana.com
+
 solana program deploy target/deploy/solana_can_i_win.so
 ```
 
